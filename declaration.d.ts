@@ -1,5 +1,3 @@
-/* eslint-disable import/no-default-export, init-declarations */
-
 declare module "*.svg" {
     const content: string;
 

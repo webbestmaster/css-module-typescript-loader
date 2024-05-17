@@ -43,7 +43,6 @@ function getTypingContent(source: string): string {
 }
 
 export function cssModuleTypescriptLoader(this: LoaderContextType, source: string): string {
-    // eslint-disable-next-line babel/no-invalid-this
     const pathToNewFile = `${this.resourcePath}.d.ts`;
 
     fileSystem.writeFile(pathToNewFile, getTypingContent(source), writeFileCallback);
