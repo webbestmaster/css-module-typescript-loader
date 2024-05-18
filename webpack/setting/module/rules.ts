@@ -51,6 +51,7 @@ export const rules: Array<RuleSetRule> = [
         test: /\.scss$/u,
         use: [
             cssLoader,
+            // "css-module-typescript-loader",
             {loader: path.resolve("./www/library/library.ts")},
             {
                 loader: "css-loader",
@@ -72,6 +73,7 @@ export const rules: Array<RuleSetRule> = [
         test: /\.css$/u,
         use: [
             cssLoader,
+            // "css-module-typescript-loader",
             {loader: path.resolve("./www/library/library.ts")},
             {
                 loader: "css-loader",
