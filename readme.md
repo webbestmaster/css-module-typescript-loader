@@ -48,7 +48,7 @@ module.exports = {
       {
         test: /\.css$/u,
         use: [
-          // Here can be `style-loader` or `mini-css-extract-plugin` loader
+          // Here can be `style-loader` or `mini-css-extract-plugin` loader before `css-module-typescript-loader`
           'css-module-typescript-loader',
           {
             loader: 'css-loader',
