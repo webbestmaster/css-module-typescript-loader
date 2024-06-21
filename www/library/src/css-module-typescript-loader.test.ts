@@ -4,8 +4,8 @@ import fileSystem from "node:fs/promises";
 
 import {runCommand} from "./test-util";
 
-describe("empty describe", () => {
-    it("empty test", async () => {
+describe("generated file check", () => {
+    it("check file content", async () => {
         expect.assertions(1);
 
         // 1/2 run webpack build
