@@ -1,6 +1,7 @@
 /* global HTMLElement */
-import {describe, expect, it} from "@jest/globals";
 import fileSystem from "node:fs/promises";
+
+import {describe, expect, it} from "@jest/globals";
 
 import {runCommand} from "./test-util";
 
