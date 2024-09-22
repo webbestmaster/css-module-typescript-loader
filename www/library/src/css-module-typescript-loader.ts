@@ -14,6 +14,7 @@ function getIsNonEmptyString(line: string): line is string {
 }
 
 function makeTypingLine(line: string): string {
+    // eslint-disable-next-line sonarjs/slow-regex
     if (!/export var\s+\S+?\s*=\s*\S+?;/u.test(line)) {
         return "";
     }
